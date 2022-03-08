@@ -6,12 +6,13 @@
 html {
   scroll-behavior: smooth;
   max-width: 100%;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 body {
   font-size: 100%;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 div,
@@ -38,14 +39,14 @@ header {
 
 #menu li {
   list-style: none;
-  display: inline-block;
-
+  display: inline-flex;
   margin: 0 80px;
 }
 
 #menu li a {
-  color: #fff;
-  text-decoration: none;
+  color: black;
+  font-weight:bold;
+  text-decoration:solid;
   font-size: 20px;
 }
 
@@ -58,25 +59,44 @@ section {
 
 /* HOME PAGE */
 #home {
-  background-color: #59405c;
-  z-index: -2;
+  background-color: rgb(156, 155, 155);
+  z-index: 10;
   position: relative;
 }
+
 
 .logo {
   height: 100px;
   width: 100px;
 }
 
-.circle {
+
+#container {
+  box-sizing: border-box;
   position: relative;
-  top: 10%;
-  left: 35%;
   height: 80%;
-  width: 1550px;
-  background-color: yellow;
-  border-radius: 50%;
-  z-index: -1;
+  width: 90%;
+  left: 45%;
+  top: 15%;
+  /* border: 1px black solid; */
+}
+
+#inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #f7df1d;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100%;
+}
+
+#websvg {
+  position: relative;
+  box-sizing:border-box;
+  height: 80%;
+  margin: 10%;
+  
 }
 
 #about {
