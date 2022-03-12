@@ -30,24 +30,32 @@ header {
 header {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
+  padding-left: 20px;
+  padding-top: 20px;
   align-items: center;
   position: fixed;
   z-index: 999;
+  
 }
 
-#menu li {
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
-  display: inline-flex;
-  margin: 0 80px;
+  
+  
 }
+
 
 #menu li a {
   color: black;
-  font-weight:bold;
-  text-decoration:solid;
+  font-weight: bold;
+  text-decoration: solid;
   font-size: 20px;
+  margin: 0px 20px;
+  font-size:x-large;
 }
 
 section {
@@ -64,12 +72,11 @@ section {
   position: relative;
 }
 
-
 .logo {
   height: 100px;
   width: 100px;
+  margin: 20px;
 }
-
 
 #container {
   box-sizing: border-box;
@@ -93,10 +100,9 @@ section {
 
 #websvg {
   position: relative;
-  box-sizing:border-box;
+  box-sizing: border-box;
   height: 80%;
   margin: 10%;
-  
 }
 
 #about {
